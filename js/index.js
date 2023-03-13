@@ -39,16 +39,14 @@ function describeAge(age) {
 
 //Conditional (ternary) operator
 function describeAge(n) {
-  return "You're a(n) " + (n <= 12
-    ? 'kid'
-    : n <= 17
-    ? 'teenager'
-    : n <= 64
-    ? 'adult'
-    : 'elderly');
+  return (
+    "You're a(n) " +
+    (n <= 12 ? 'kid' : n <= 17 ? 'teenager' : n <= 64 ? 'adult' : 'elderly')
+  );
 }
 
-/*8Arrow functrion + Conditional (ternary) operator
+/***
+Arrow functrion + Conditional (ternary) operator
 const describeAge = (age) =>
   age <= 12
     ? "You're a(n) kid"
@@ -56,4 +54,5 @@ const describeAge = (age) =>
     ? "You're a(n) teenager"
     : age >= 18 && age <= 64
     ? "You're a(n) adult"
-    : "You're a(n) elderly"; */
+    : "You're a(n) elderly"; 
+    ***/
