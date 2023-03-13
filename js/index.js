@@ -37,7 +37,7 @@ function describeAge(age) {
   }
 }
 
-Conditional (ternary) operator
+//Conditional (ternary) operator
 function describeAge(n) {
   return "You're a(n) " + (n <= 12
     ? 'kid'
